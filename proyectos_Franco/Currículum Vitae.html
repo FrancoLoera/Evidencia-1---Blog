@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Raúl Jiménez | Marketing Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0D141C;
+      --primary-2:#121B26;
+      --primary-3:#1B2736;
+      --text:#E9EDF3;
+      --muted:#B9C2CF;
+      --accent:#4AA3FF;
+      --paper:#0B0F15;
+      --chip:#233347;
+    }
+    body{margin:0;font-family:'Poppins',sans-serif;background:var(--paper);color:var(--text);}
+    .page{width:210mm;min-height:297mm;margin:24px auto;background:linear-gradient(180deg,var(--primary),var(--primary-2));display:grid;grid-template-columns:280px 1fr;border-radius:14px;overflow:hidden;}
+    .sidebar{background:linear-gradient(180deg,var(--primary),var(--primary-3));padding:28px;}
+    .avatar{width:200px;height:200px;border-radius:50%;overflow:hidden;display:block;margin:0 auto 20px;}
+    .avatar img{width:100%;height:100%;object-fit:cover;}
+    .name-small{text-align:center;font-weight:600;color:var(--muted);margin-bottom:20px;}
+    .section-title{font-weight:700;text-transform:uppercase;margin:20px 0 10px;position:relative;}
+    .section-title:after{content:"";position:absolute;left:0;bottom:-6px;width:50px;height:3px;background:var(--primary-3);}
+    .contact-item{margin:8px 0;color:var(--text);}
+    .bullets{list-style:none;padding:0;margin:0;}
+    .bullets li{margin:8px 0;color:var(--muted);}
+    .content{padding:40px;background:var(--primary-2);}
+    h1{margin:0;font-size:2.4rem;font-weight:800;color:#EAF2FF;}
+    .role{margin:5px 0 20px;font-weight:600;color:var(--muted);text-transform:uppercase;}
+    .job{margin:15px 0;}
+    .job .company{font-weight:600;color:#EAF2FF;}
+    .job .year{color:var(--muted);}
+    .job .position{font-weight:600;margin:5px 0;}
+    .job .desc{color:var(--muted);}
+    .skill,.lang{margin:12px 0;}
+    .label{margin-bottom:4px;}
+    .bar{height:10px;background:#0e1620;border-radius:20px;overflow:hidden;}
+    .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7FC0FF);}
+    .bar[data-level="95"] span{width:95%;}
+    .bar[data-level="80"] span{width:80%;}
+    .bar[data-level="70"] span{width:70%;}
+    .lang .bar{margin-top:5px;}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="sidebar">
+      <div class="avatar"><img src="https://via.placeholder.com/200" alt="Foto"></div>
+      <div class="name-small">RAÚL JIMÉNEZ 22/02/1992</div>
+      <div class="section-title">Contacto</div>
+      <div class="contact-item">91-1234-567</div>
+      <div class="contact-item">hola@unsitiogenial.es</div>
+      <div class="contact-item">Calle cualquiera 123, Cualquier lugar, CP:12345</div>
+      <div class="section-title">Información</div>
+      <ul class="bullets">
+        <li>Lic. en Marketing</li>
+        <li>10 años de experiencia</li>
+        <li>Gestión de campañas digitales</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Raúl Jiménez</h1>
+      <div class="role">Marketing Manager</div>
+      <div class="job">
+        <div class="company">Empresa X <span class="year">(2019 - Presente)</span></div>
+        <div class="position">Marketing Manager</div>
+        <div class="desc">Dirigiendo campañas digitales y estrategias de marca.</div>
+      </div>
+      <div class="job">
+        <div class="company">Empresa Y <span class="year">(2015 - 2019)</span></div>
+        <div class="position">Coordinador de Marketing</div>
+        <div class="desc">Supervisión de equipos y coordinación de eventos corporativos.</div>
+      </div>
+      <div class="section-title">Habilidades</div>
+      <div class="skill">
+        <div class="label">SEO</div>
+        <div class="bar" data-level="95"><span></span></div>
+      </div>
+      <div class="skill">
+        <div class="label">Publicidad Online</div>
+        <div class="bar" data-level="80"><span></span></div>
+      </div>
+      <div class="skill">
+        <div class="label">Email Marketing</div>
+        <div class="bar" data-level="70"><span></span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

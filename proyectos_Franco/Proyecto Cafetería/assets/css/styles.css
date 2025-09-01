@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #201501;
+    --secondary-color: #422b03;
+    --tertiary-color: #8f5c04;
+    --semi-white: #f8f8f8;
+    --white-text-color: #b3b3b3;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(135deg , var(--primary-color), var(--secondary-color));
+}
+
+h1 {
+    font-family: 'Bungee';
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Bungee';
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0px var(--tertiary-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fff;
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 15px 25px 15px;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFF;
+}
+
+.coffee-icon {
+    margin-right: 20px;
+}
+
+.coffee-title {
+    text-shadow: 4px 4px 0px var(--tertiary-color);
+}
+
+.coffee-text {
+    color: var(--white-text-color);
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px 0px 30px;
+}
+
+.menu {
+    background-color: var(--semi-white);
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.menu ul li {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px 10px;
+    border-radius: 100px;
+    border: solid 1px #e0e0e0;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.menu ul li:hover {
+    color: #FFF;
+    background-color: var(--tertiary-color);
+    border: solid 1px var(--tertiary-color);
+    box-shadow: 2px 2px 2px var(--tertiary-color);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.main-content {
+    background-color: #f9f9f9;
+}
+
+.slider-section {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.slider-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.slider-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.slider-overlay-content h2 {
+    margin-bottom: 20px;
+}
+
+
+.dark-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: var(--tertiary-color);
+    color: white;
+    text-decoration: none;
+    border: 2px solid #ffffff00;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.dark-button:hover {
+    background-color: #ffffff00;
+    color: #f8f8f8;
+    border: 2px solid #b1b1b1;
+}
+
+.product-images {
+    position: relative;
+    display: flex;
+    width: 30rem;
+    animation: scroll 30s linear infinite;
+    z-index: 0;
+}
+
+.product-images img {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translateX(-250rem);
+    }
+}
+
+.products-menu-section {
+    color: #201501;
+}
+
+.products-menu-title h2 {
+    color: #432c03;
+    text-shadow: 3px 3px 0px #c5a46c;
+    margin-bottom: -10px;
+}
+
+.products-menu-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px 80px;
+}
+
+.card-box {
+    color: var(--primary-color);
+    background: linear-gradient(135deg, #FFF, #f3f3f3);
+    border: 2px solid #efefef;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-box h3 {
+    margin: 10px 0px 10px 0px;
+}
+
+.card-box p {
+    margin: 0px 0px 20px 0px;
+}
+
+.card-box a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.card-box a:hover {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
