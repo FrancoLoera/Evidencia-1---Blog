@@ -241,3 +241,11 @@ a {
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
 }
+
+.promotions-section {
+    width: 90%;
+}
+
+.promotions-cards {
+    display: flex;
+}
