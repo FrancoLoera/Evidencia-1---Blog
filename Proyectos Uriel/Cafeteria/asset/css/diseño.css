@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.content {
+    background-color: #fff;
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #7f5a1a;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav {
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: burlywood;
+    color: #000;
+}
+
+.carrusel {
+    width: 100%; /* Corrected width for carousel */
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-productos {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300rem); /* Adjusted for 6 images x 50rem */
+    }
+}
+
+.img-productos img {
+    width: 50rem; /* Corrected spacing */
+    height: 30rem; /* Corrected spacing */
+    object-fit: cover;
+}
+
+#menu {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fffff9;
+    border-radius: 12px;
+    color: #4b3b2b;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #bd956d;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover {
+    background-color: #f3e9d2;
+}
+
+#menu ul li strong {
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+#menu ul li small {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #8b7d65;
+    margin-top: 0.2rem;
+}
+
+.promo-item {
+    background-color: #f9f3e8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #7f5a1a;
+}
+
+.promo-item h3 {
+    color: #7f5a1a;
+    margin-top: 0;
+}
+
+.barista-recommendation h3 {
+    color: #7f5a1a;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.barista-recommendation h3 i {
+    margin-right: 10px;
+}
+
+.barista-recommendation strong {
+    color: #7f5a1a;
+    font-weight: bold;
+}   
+
+#nosotros {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fffff9;
+    border-radius: 12px;
+    color: #4b3b2b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#nosotros h1 {
+    color: #7f5a1a;
+    border-bottom: 2px solid #bd956d;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#nosotros p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+#contacto {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fffff9;
+    border-radius: 12px;
+    color: #4b3b2b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contacto h1 {
+    color: #7f5a1a;
+    border-bottom: 2px solid #bd956d;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    line-height: 1.8;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-info i {
+    width: 20px;
+    margin-right: 10px;
+    color: #7f5a1a;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #7f5a1a;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #bd956d;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #7f5a1a;
+    font-size: 0.9rem;
+}
