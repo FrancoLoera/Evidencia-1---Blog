@@ -1,0 +1,201 @@
+:root {
+    --primary:#0D141C;
+    --secondary:#121B26;
+    --tertiary:#1B2736;
+    --text:#E9EDF3;
+    --light-text:#B9C2CF;
+    --accent:#4AA3FF;
+    --paper:#0B0F15;
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter';
+    background: var(--paper);
+    color: var(--text);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #EAF2FF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    background: var(--primary);
+    width: 210mm;
+    min-height: 95vh;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+.left-column {
+    background-color: var(--secondary);
+    padding: 20px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar a img {
+    transition: 0.3s;
+}
+
+.avatar a:hover img {
+    filter: brightness(50%);
+}
+
+.name {
+    text-align: center;
+    font-weight: 600;
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+    position: relative;
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 50px;
+    height: 3px;
+    background: var(--accent);
+}
+
+.contact-item {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: var(--light-text);
+    transition: 0.4s;
+}
+
+.contact-item:hover {
+    color: var(--accent)
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    margin: 8px 0;
+    color: var(--light-text);
+    font-size: 0.8rem;
+}
+
+.right-column {
+    padding: 40px;
+    background: var(--primary-2);
+}
+
+.hobbie {
+    margin: 5px 0 20px;
+    font-weight: 600;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+.academic-level {
+    margin: 15px 0;
+}
+
+.institution {
+    font-weight: 600;
+    color: #EAF2FF;
+}
+
+.degree {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.desc {
+    color: var(--light-text);
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.lang {
+    margin: 12px 0;
+}
+
+.label {
+    margin-bottom: 4px;
+}
+
+.bar {
+    height: 10px;
+    background: #0e1620;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,var(--accent),#7FC0FF);
+}
+
+.bar[data-level="95"] span {
+    width:95%;
+}
+
+.bar[data-level="80"] span {
+    width:80%;
+}
+
+.bar[data-level="70"] span {
+    width:70%;
+}
+
+.lang .bar {
+    margin-top: 5px;
+}
+
+@media (max-width: 991px) {
+    .content {
+        grid-template-columns: repeat(1, 2fr);
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-column {
+        padding: 20px;
+    }
+}

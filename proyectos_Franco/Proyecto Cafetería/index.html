@@ -19,12 +19,17 @@
             <h1 class="coffee-title">&nbsp;<i class="fa-solid fa-mug-hot coffee-icon"></i>Café & Chill</h1>
             <p class="coffee-text">Tu rincón favorito para café, postres y buena compañía</p>
 
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <nav class="menu">
                 <ul>
-                    <a href=""><li><i class="fa-solid fa-bars menu-icon"></i>Menú</li></a>
-                    <a href=""><li><i class="fa-solid fa-percent menu-icon"></i>Promociones</li></a>
-                    <a href=""><li><i class="fa-solid fa-address-card menu-icon"></i>Nosotros</li></a>
-                    <a href=""><li><i class="fa-solid fa-phone-volume menu-icon"></i>Contacto</li></a>
+                    <a href="#menu-section"><li><i class="fa-solid fa-bars icon"></i>Menú</li></a>
+                    <a href="#promotions-section"><li><i class="fa-solid fa-percent icon"></i>Promociones</li></a>
+                    <a href="#about-us-section"><li><i class="fa-solid fa-address-card icon"></i>Nosotros</li></a>
+                    <a href="#contact-section"><li><i class="fa-solid fa-phone-volume icon"></i>Contacto</li></a>
                 </ul>
             </nav>
         </header>
@@ -34,10 +39,11 @@
     <!-- Main -->
     <main class="container">
         <div class="content main-content">
+            <!-- Sección Slider -->
             <section class="slider-section">
                 <div class="slider-overlay-content">
                     <h2>Si tienes hambre, nosotros podemos ayudarte</h2>
-                    <a href="#promociones-section" class="dark-button">Ver Promociones</a>
+                    <a href="#promotions-section" class="dark-button">Ver Promociones</a>
                 </div>
                 <div class="product-images">
                     <img src="assets/img/capuchino.jpg" alt="capuchino">
@@ -52,8 +58,9 @@
                     <img src="assets/img/te.webp" alt="te">
                 </div>
             </section>
-            <section class="products-menu-section">
-                <div class="products-menu-title">
+            <!-- Sección Menú de productos -->
+            <section class="products-menu-section" id="menu-section">
+                <div class="section-title">
                     <h2>Nuestro Menú</h2>
                     <p>Sabemos que no puedes sacarte ese antojo que tienes en la cabeza, para tu suerte, nosotros te podemos ayudar</p>
                 </div>
@@ -84,21 +91,84 @@
                     </div>
                 </div>
             </section>
-            <section class="promotions-section">
-                <div class="products-menu-title">
+            <!-- Sección Promociones -->
+            <section class="promotions-section" id="promotions-section">
+                <div class="section-title">
                     <h2>Promociones</h2>
+                    <p>Promociones que saben tan bien como tu café favorito.</p>
                 </div>
                 <div class="promotions-cards">
-                    <div class="card-box">
-
+                    <a href="https://http.cat/status/204" target="_blank" class="image-box" style="background-image: url('assets/img/capuccino-promotion.jpg');">
+                        <div class="image-overlay">
+                            <div class="image-overlay-content">
+                                <h3>2x1 en Capuccinos</h3>
+                                <p>Todos los martes de 4pm a 6pm</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://http.cat/status/204" target="_blank" class="image-box" style="background-image: url('assets/img/cafe-pan-promotion.jpg');">
+                        <div class="image-overlay">
+                            <div class="image-overlay-content">
+                                <h3>Combo Café + Panqué</h3>
+                                <p>Solo $70. Disponible todo el día.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Sección Nosotros -->
+            <section class="about-us-section" id="about-us-section">
+                <div class="columna-1">
+                    <img src="assets/img/coffee-team-f9.gif" height="300px">
+                </div>
+                <div class="columna-2">
+                    <div class="section-title">
+                        <h2>Nosotros</h2>
+                        <p><span style="font-weight: 800;">CAFÉ & CHILL</span> es una cafetería local con un enfoque en productos artesanales y atención personalizada. Nuestra misión es ofrecer más que café: un lugar donde relajarte, estudiar o tener una buena charla.</p>
+                        <a href="https://http.cat/status/204" target="_blank" class="dark-button">Conocer más</a>
                     </div>
-                    <div class="card-box">
-
+                </div>
+            </section>
+            <!-- Sección Barista -->
+            <section class="recommendation-section" id="recommendation-section">
+                <div class="columna-1">
+                    <img src="assets/img/orange-cold-brew.png" height="300px">
+                </div>
+                <div class="columna-2">
+                    <div class="section-title">
+                        <h2>El barista recomienda</h2>
+                        <p>Prueba nuestro nuevo <span style="color: #da9e1e; font-weight: 800;">Cold Brew con Naranja</span>, refrescante y con un sabor único.</p>
                     </div>
                 </div>
             </section>
         </div>
     </main>
     <!-- Main -->
+    <!-- Footer -->
+    <footer class="container footer-container" id="contact-section">
+        <div class="content footer-content">
+            <div class="contact-info">
+                <div class="contact-info-column">
+                    <h2>Ubicación</h2>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-solid fa-location-dot icon"></i>Av. Siempre Viva #123, Ciudad Café</a>
+                </div>
+                <div class="contact-info-column">
+                    <h2>Teléfono</h2>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-solid fa-phone icon"></i>(123) 456-7890</a>
+                </div>
+                <div class="contact-info-column">
+                    <h2>Correo Electrónico</h2>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-solid fa-envelope icon"></i>contacto@cafechill.com</a>
+                </div>
+                <div class="contact-info-column">
+                    <h2>Redes Sociales</h2>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-brands fa-square-facebook net-icons"></i></a>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-brands fa-instagram net-icons"></i></a>
+                    <a href="https://http.cat/status/204" target="_blank"><i class="fa-brands fa-tiktok net-icons"></i></i></a>
+                </div>
+            </div>
+            <p>© 2025 CAFÉ & CHILL - Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
