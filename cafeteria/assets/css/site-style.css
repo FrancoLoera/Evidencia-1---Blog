@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(207, 220, 220);
+}
+
+.content {
+    background-color: rgb(239, 255, 255);
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(117, 104, 32);
+    padding: 10px 15px;
+    border-radius: 10px 10px 0 0;
+    color: beige;
+}
+header h1 { text-shadow: 1px 1px 2px black; }
+
+
+nav { 
+    background-color: black; 
+}
+nav ul {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; justify-content: space-around;
+}
+nav ul li { flex: 1; text-align: center; }
+nav ul li a {
+    display: block; padding: 15px 0;
+    color: rgb(239,255,255);
+    text-decoration: none; font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover { background-color: rgb(117, 104, 32); }
+
+
+.carrusel {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+.img-productos {
+    display: flex;
+    width: 30rem;
+    animation: scroll 30s linear infinite;
+}
+.img-productos img {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+}
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-250rem); }
+}
+
+/* Menú */
+#menu {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(239, 255, 255);
+    border-radius: 12px;
+    color: rgb(86, 58, 2);
+}
+
+#menu h1 { margin-top: 0; }
+#menu h3 {
+    margin: 1.2rem 0 0.6rem;
+    color: rgb(117, 104, 32);
+    font-size: 1.1rem;
+}
+
+.lista-productos,
+#promociones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-productos li {
+    margin-bottom: 1rem;
+    border-left: 4px solid rgb(117, 104, 32);
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    background-color: rgba(225, 209, 189, 0.2);
+}
+
+.lista-productos li strong { font-size: 1rem; }
+.lista-productos li small {
+    display: block;
+    font-size: 0.85rem;
+    color: #8b7d65;
+    margin-top: 0.2rem;
+}
+
+
+.precio {
+    float: right;
+    font-weight: bold;
+    color: rgb(86, 58, 2);
+}
+
+
+
+#promociones {
+    background-color: #fdfcf6;   
+    border: 2px dashed rgb(117, 104, 32);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#promociones h1 {
+    color: rgb(117, 104, 32);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#promociones ul {
+    list-style: none;
+    padding: 0;
+}
+
+#promociones li {
+    background-color: rgba(117, 104, 32, 0.1); 
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    color: rgb(117, 104, 32);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#promociones li:hover {
+    transform: scale(1.02);
+    background-color: rgba(117, 104, 32, 0.2);
+}
+
+#nosotros{
+    background-color: rgba(117, 104, 32, 0.1); 
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 25px;
+}
+#contacto{
+    background-color: rgba(117, 104, 32, 0.1); 
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 25px;
+}
