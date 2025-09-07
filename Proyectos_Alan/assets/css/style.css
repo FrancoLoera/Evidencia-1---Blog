@@ -1,0 +1,36 @@
+:root {
+  --brand: #756820;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.navbar {
+  background: var(--brand);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.section-title {
+  border-left: 6px solid var(--brand);
+  padding-left: 12px;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.lead-small {
+  font-size: 1.05rem;
+}
+
+.card .badge {
+  background: var(--brand);
+}
+
+footer {
+  background: #222;
+  color: #ddd;
+}
