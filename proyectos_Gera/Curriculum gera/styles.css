@@ -1,0 +1,123 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2ff; /* Azul cielo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    background-color: #cceaff; /* Tonalidad más fuerte de azul cielo */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #045b78;
+    border-bottom: 2px solid #045b78;
+    padding-bottom: 4px;
+}
+
+.section p, .section ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.section span {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Main Content */
+.main-content {
+    width: 65%;
+    padding: 40px 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #045b78;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #045b78;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cceaff;
+    padding-bottom: 4px;
+}
+
+section p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h4 {
+    font-size: 16px;
+    color: #222;
+}
+
+.job span {
+    font-size: 13px;
+    color: #666;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.job p {
+    font-size: 14px;
+    color: #444;
+}

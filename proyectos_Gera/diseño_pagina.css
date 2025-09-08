@@ -1,0 +1,323 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   ENCABEZADO Y MENÚ
+=========================== */
+header {
+  background-color: #9e1b32;
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #fff;
+  color: #9e1b32;
+}
+
+/* ===========================
+   SECCIÓN HERO
+=========================== */
+.hero {
+  background: linear-gradient(to right, rgba(158, 27, 50, 0.85), rgba(0, 0, 0, 0.7)),
+    url("https://upload.wikimedia.org/wikipedia/commons/5/5e/Alabama_Crimson_Tide_logo.svg") center/contain no-repeat;
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.hero-text {
+  max-width: 700px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #fff;
+  color: #9e1b32;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   SECCIONES GENERALES
+=========================== */
+section {
+  padding: 80px 20px;
+}
+
+.section-title h2 {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   SOBRE MÍ
+=========================== */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.about-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(158, 27, 50, 0.6);
+}
+
+/* ===========================
+   deportes
+=========================== */
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.juego-card {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(158, 27, 50, 0.5);
+}
+
+.juego-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.juego-card h3 {
+  color: #ffcc00;
+}
+
+.juego-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(158, 27, 50, 0.8);
+}
+
+/* ===========================
+   LÍNEA DE TIEMPO
+=========================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+.timeline-item {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(158, 27, 50, 0.5);
+}
+
+.timeline-item h3 {
+  color: #ffcc00;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px 0;
+  color: #aaa;
+  margin-top: 40px;
+  border-top: 3px solid #9e1b32;
+}
+
+/* ===========================
+   ANIMACIONES
+=========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
+
+/* HERO CON BANNER PRINCIPAL */
+.hero {
+  background: linear-gradient(to right, rgba(158, 27, 50, 0.8), rgba(0, 0, 0, 0.7)),
+    url("./IMG/banner0.jpeg") center/cover no-repeat;
+  padding: 140px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid #ffcc00;
+}
+
+/* LOGO EN EL HEADER */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("./IMG/logo_alabama.jpeg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+/* TARJETAS DE VIDEOJUEGOS CON IMÁGENES */
+.juego-card:nth-child(1) img {
+  content: url("./IMG/banner2.jpg");
+}
+.juego-card:nth-child(2) img {
+  content: url("./IMG/banner3.jpg");
+}
+.juego-card:nth-child(3) img {
+  content: url("./IMG/logo_alabama.jpeg");
+}
+
+
+
