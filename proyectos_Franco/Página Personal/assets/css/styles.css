@@ -1,0 +1,91 @@
+:root {
+    --oscuro-primario:   #0D141C;
+    --oscuro-secundario: #172c40;
+    --oscuro-terciario:  #2a3e4d;
+    --claro-primario:    #445460;
+    --claro-secundario:  #929DA1;
+    --claro-terciario:   #CCD0CF;
+    --acentuar:          #ABC5ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Arial';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.container {
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.hero-section {
+    background-image: url(../img/fondo-funger-black.png);
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-icon {
+    background-color: var(--acentuar);
+    color: var(--oscuro-primario);
+    transition: 0.4s;
+    border: 2px solid var(--acentuar);
+}
+
+.hero-icon:hover {
+    background-color: var(--claro-primario);
+    color: var(--claro-terciario);
+    border-color: var(--claro-terciario);
+}
+
+.basic-section {
+    background-color: var(--oscuro-primario);
+    color: white;
+}
+
+.content-text {
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+}
+
+.perspective-section {
+    max-width: 1000px;
+}
+
+.link-card {
+    background-color: var(--oscuro-secundario);
+    transition: 0.4s;
+}
+
+.link-card:hover {
+    background-color: var(--acentuar);
+    color: var(--oscuro-primario);
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        background-position: left bottom;
+    }
+}
