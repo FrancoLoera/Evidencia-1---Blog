@@ -31,8 +31,23 @@ header a:hover {
 }
 
 h1 {
+    font-size: 45px;
     font-weight: 800;
     color: var(--claro-terciario);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--oscuro-secundario);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--claro-primario);
 }
 
 a {
@@ -64,8 +79,96 @@ a {
     width: 80%;
 }
 
+.container-blog {
+    max-width: 1100px;
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+    padding: 3rem 1rem;
+}
+
+.row-introduction {
+    background-color: var(--claro-terciario);
+}
+
+.element-card {
+    background-color: var(--oscuro-secundario);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    color: var(--claro-terciario);
+    margin-bottom: 10px;
+}
+
+.language-cards i {
+    color: white;
+}
+
+.card-item i {
+    transition: 0.8s;
+}
+
+.card-item i:hover {
+    color: var(--claro-terciario);
+}
+
+.element-card h3 {
+    color: white;
+}
+
+.html-section {
+    background-color: #ffe8de;
+}
+
+.css-section {
+    background-color: #d9e4ff;
+}
+
+.custom-width {
+    width: 75%;
+}
+
+.wdn-card {
+    background-color: #0e0f0f;
+    transition: 0.5s;
+}
+
+.wdn-card:hover {
+    background-color: #424242;
+}
+
+.w3s-card {
+    background-color: #009967;
+    transition: 0.5s;
+}
+
+.w3s-card:hover {
+    background-color: #46cb9e;
+}
+
+.fcc-card {
+    background-color: #090921;
+    transition: 0.5s;
+}
+
+.fcc-card:hover {
+    background-color: #2b2b75;
+    transition: 0.5s;
+}
+
 @media (max-width: 767px) {
     .site-header {
         padding: 1rem 0;
+    }
+
+    .hero-section {
+        padding: 13rem 0 3rem 0;
+    }
+
+    .container-blog {
+        width: 100%;
+    }
+
+    .custom-width {
+        width: 50% !important;
     }
 }
