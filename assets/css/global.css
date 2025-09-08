@@ -60,7 +60,6 @@ article {
 }
 
 section {
-    text-align: justify;
     color: white;
 }
 
@@ -174,6 +173,23 @@ section {
 
 .about-us-section h2 {
     color: white;
+}
+
+.student-card {
+    background-color: var(--oscuro-primario);
+}
+
+
+
+.proyect-button {
+    background-color: var(--claro-primario);
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.proyect-button:hover {
+    background-color: var(--acentuar);
+    color: var(--oscuro-primario);
 }
 
 @media (max-width: 767px) {
