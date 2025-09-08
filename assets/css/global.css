@@ -55,6 +55,15 @@ a {
     text-decoration: none;
 }
 
+article {
+    text-align: justify;
+}
+
+section {
+    text-align: justify;
+    color: white;
+}
+
 .site-header {
     position: absolute;
     top: 0;
@@ -79,11 +88,14 @@ a {
     width: 80%;
 }
 
-.container-blog {
+/* .blog-section {
+    background-color: var(--oscuro-secundario);
+} */
+
+.container {
     max-width: 1100px;
     width: 100%;
     font-size: 14px;
-    text-align: justify;
     padding: 3rem 1rem;
 }
 
@@ -153,6 +165,15 @@ a {
 .fcc-card:hover {
     background-color: #2b2b75;
     transition: 0.5s;
+}
+
+.about-us-section {
+    background-color: var(--oscuro-secundario);
+    color: white;
+}
+
+.about-us-section h2 {
+    color: white;
 }
 
 @media (max-width: 767px) {
